@@ -10,6 +10,7 @@ Scenario.updateInterval = 0.1
 Scenario.endTime = 10000
 
 
+ProphetRouter.secondsInTimeUnit = 1
 ## Interface-specific settings:
 # type : which interface class the interface belongs to
 # For different types, the sub-parameters are interface-specific
@@ -53,7 +54,7 @@ Scenario.nrofHostGroups = 6
 
 # Common settings for all groups
 Group.movementModel = ShortestPathMapBasedMovement
-Group.router = EEDRRouter
+Group.router = ProphetRouter
 ## EAStarProphetRouter
 Group.bufferSize = 15M
 Group.waitTime = 0, 120
